@@ -254,3 +254,12 @@ nav {
     grid-template-columns: 1fr;
   }
 }
+.about {
+  text-align: center;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  padding: 10px;
+}
+.headingsec {
+  margin-bottom: 24px;
+}

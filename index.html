@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>School management</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -49,10 +49,13 @@
               <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#footer" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li class="nav-item">
               <a href="form.html" class="nav-link">Enterdetails</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Comparator</a>
             </li>
             <li class="nav-item">
               <a href="#footer" class="nav-link">Contact us</a>
@@ -67,6 +70,16 @@
         </div>
       </div>
     </nav>
+    <div class="paraa">
+    <p class="para">
+      <marquee
+        >This website is used to manage school assets details of the building
+        such as type,size,area,year of construction,capacity,rooms,labs,
+        maintainance required,etc.,should be available along with GIS mapping of
+        location ,present use of building,etc.</marquee
+      >
+    </div>
+    </p>
     <div class="home">
       <div class="swiper mySwiper home-slider">
         <div class="swiper-wrapper">
@@ -83,6 +96,13 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
       </div>
+    </div>
+    <div class="about" id="about">
+      <h2 class="headingsec">About us:</h2>
+      <p>This website is used to manage school assets details of the building
+        such as type,size,area,year of construction,capacity,rooms,labs,
+        maintainance required,etc.,should be available along with GIS mapping of
+        location ,present use of building,etc.</p>
     </div>
     <div><h1>List of schools</h1></div>
     <div class="gallery">
@@ -155,15 +175,6 @@
 
     <!-- Initialize Swiper -->
     <script>
-      // var swiper = new Swiper(".mySwiper", {
-      //   grabCursor: true,
-      //   loop: true,
-      //   centeredSlides: true,
-      //   navigation: {
-      //     nextEl: ".swiper-button-next",
-      //     prevEl: ".swiper-button-prev",
-      //   },
-      // });
       const swiper = new Swiper(".mySwiper", {
         autoplay: {
           delay: 3000,
