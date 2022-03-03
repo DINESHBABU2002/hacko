@@ -13,4 +13,5 @@ $state=$_POST['state'];
 $gender=$_POST['gender'];
 $whats=$_POST['whats'];
 $email=$_POST['email'];
-echo $Schoolname;
+$querry="insert into register values('$Schoolname','$Schoolid','$Year','$Area','$rooms','$Labs','$Capacity','$Email','$Phone','$state','$gender','$whats','$email')";
+mysqli_query($conn,$querry);
