@@ -4,11 +4,12 @@ function registration() {
   var uname = document.getElementById("t3").value;
   var pwd = document.getElementById("t4").value;
   var cpwd = document.getElementById("t5").value;
-
+  var schid = document.getElementById("t6").valve;
   //email id expression code
   var pwd_expression =
     /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
   var letters = /^[A-Za-z]+$/;
+  var idd = /^[A-Za-z1-9\-]+$/;
   var filter =
     /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 
@@ -24,6 +25,10 @@ function registration() {
     alert("Please enter the user name.");
   } else if (!letters.test(uname)) {
     alert("User name field required only alphabet characters");
+  } else if (schid == "") {
+    alert("Please enter Password");
+  } else if (!idd.test(schid)) {
+    alert("Invalid Schoolid ");
   } else if (pwd == "") {
     alert("Please enter Password");
   } else if (cpwd == "") {
@@ -50,4 +55,5 @@ function clearFunc() {
   document.getElementById("t3").value = "";
   document.getElementById("t4").value = "";
   document.getElementById("t5").value = "";
+  document.getElementById("t6").value = "";
 }
